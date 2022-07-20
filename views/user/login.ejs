@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> 도서 구매 사이트 </title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+    <h1> BookStore </h1>
+    <nav>
+      <ul class="nav-container">
+        <li class="nav-item"><a href="/signup">회원가입</a></li>
+        <li class="nav-item"><a href="">추천 도서</a></li>
+        <li class="nav-item"><a href="">장바구니</a></li>
+        <li class="nav-item"><a href="">주문 목록</a></li>
+      </ul>
+    </nav>        
+    <p style="font-size: 25px; text-align: center;"> LOG-IN Page </p>
+    <form method="POST" action="/user/login" style="height: 100vh;" class="container" id="input">
+      <div style="padding: 20px;" class="wrapper">
+        <label for="">ID</label>
+        <input type="text" required="required" name="user_id">
+      </div>
+      <div style="padding: 20px; padding-right: 100px;" class="wrapper">
+        <label for="">PassWord</label>
+        <input type="password" required="required" name="user_pw">
+      </div>
+      <div class="btn-area">
+        <button type="submit" value="Log-In">LOGIN</button>
+      </div>
+  </form>
+  </body>
+</html>
